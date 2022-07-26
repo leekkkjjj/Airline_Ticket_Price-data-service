@@ -18,7 +18,7 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from flask_socketio import SocketIO, send
-#import pyautogui
+import pyautogui
 
 app = Flask(__name__)
 
@@ -700,46 +700,46 @@ def SearchPOP_3_3():
         driver.find_element(By.CSS_SELECTOR,"#__next>div>div>main>article>div.everywhere_filters__r7GVb>div>button:nth-child(3)").click()
         
         #스크롤
-        # pyautogui.moveTo(918, 942)
-        # pyautogui.click(clicks=5)
-        # pyautogui.sleep(0.1)
+        pyautogui.moveTo(918, 942)
+        pyautogui.click(clicks=5)
+        pyautogui.sleep(0.1)
         
         
-        # money = request.form["pr"]
-        # money = str(money)
-        # print(pyautogui.position())
+        money = request.form["pr"]
+        money = str(money)
+        print(pyautogui.position())
         
-        # if (money==1) : 
-        #     # 1~50만
-        #     pyautogui.moveTo(898,899)
-        #     pyautogui.drag(-735,0,duration=2)
+        if (money==1) : 
+            # 1~50만
+            pyautogui.moveTo(898,899)
+            pyautogui.drag(-735,0,duration=2)
         
-        # elif (money==2) :
-        #     # 50~100만
-        #     pyautogui.moveTo(898,899)
-        #     pyautogui.drag(-590,0,duration=2)
-        
-        
-        # elif (money==3) :
-        #     # 100~150만
-        #     pyautogui.moveTo(898,899)
-        #     pyautogui.drag(-445,0,duration=2)
-        
-        # elif (money==4) :
-        #     # 150~200만
-        #     pyautogui.moveTo(898,899)
-        #     pyautogui.drag(-290,0,duration=2)
+        elif (money==2) :
+            # 50~100만
+            pyautogui.moveTo(898,899)
+            pyautogui.drag(-590,0,duration=2)
         
         
-        # elif (money==5) :
-        #     # 200~250만
-        #     pyautogui.moveTo(898,899)
-        #     pyautogui.drag(-140,0,duration=2)
+        elif (money==3) :
+            # 100~150만
+            pyautogui.moveTo(898,899)
+            pyautogui.drag(-445,0,duration=2)
+        
+        elif (money==4) :
+            # 150~200만
+            pyautogui.moveTo(898,899)
+            pyautogui.drag(-290,0,duration=2)
         
         
-        # elif (money==6) :
-        #     #250-300만
-        #     print("")
+        elif (money==5) :
+            # 200~250만
+            pyautogui.moveTo(898,899)
+            pyautogui.drag(-140,0,duration=2)
+        
+        
+        elif (money==6) :
+            #250-300만
+            print("")
         
         driver.find_element(By.XPATH,"//button[text()='확인']").click()
         time.sleep(5)
