@@ -1,5 +1,5 @@
 ### AirlineTicketPrice_project ( 2022/07/11 ~ 2022/07/25 )
-
+## 사용한 기술 : Flask , Python , Jinja , Crawling , JavaScript
 비행기 티켓가격표 제공 및 이용자 편의 서비스 제공 웹홈페이지 프로젝트
 
 - 대한민국 <-> 일본 여행한정 
